@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F3F3"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:context=".view.ActNode">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+    <soup.neumorphism.NeumorphImageView
+        android:id="@+id/iv_back"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:padding="15dp"
+        android:layout_gravity="left|center_vertical"
+        android:src="@drawable/ic_back"
+        tools:ignore="RtlHardcoded" />
+
+    <soup.neumorphism.NeumorphTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Serve"
+        android:textSize="24sp"
+        android:layout_marginStart="20dp"
+        android:layout_gravity="center"
+        android:textColor="#77BC7C"
+        android:textStyle="bold"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/ads_servers_container_top"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_gravity="center"
+        android:gravity="bottom"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

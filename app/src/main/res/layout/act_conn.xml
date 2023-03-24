@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F3F3"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:context=".view.ActConn">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <soup.neumorphism.NeumorphImageView
+            android:id="@+id/iv_back"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="15dp"
+            android:padding="15dp"
+            android:scrollbarSize="15sp"
+            android:background="#bfbfbf"
+            android:src="@drawable/ic_back" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_marginStart="20dp"
+            >
+            <soup.neumorphism.NeumorphTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/app_name"
+                android:textColor="#D4BF53"
+                android:textSize="26sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:text="The connection was successful"/>
+        </LinearLayout>
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/ads_connection_result_container_top"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_gravity="center"
+        android:gravity="bottom"/>
+
+
+
+    <soup.neumorphism.NeumorphCardView
+        android:id="@+id/CardView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:neumorph_shadowColorDark="#EECACA"
+        app:neumorph_shadowColorLight="#C5C2C5">
+
+        <RelativeLayout
+            android:layout_width="316dp"
+            android:layout_height="200dp">
+            <soup.neumorphism.NeumorphTextView
+                android:id="@+id/tv_status_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/app_name"
+                android:layout_centerHorizontal="true"
+                android:textColor="#51B5D9"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:neumorph_shapeType="pressed" />
+
+            <ImageView
+                android:id="@+id/isConnect"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="70dp"
+                android:src="@drawable/no_con"/>
+            <RelativeLayout
+                android:id="@+id/layout1"
+                android:layout_width="158dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true">
+
+                <soup.neumorphism.NeumorphTextView
+                    android:id="@+id/speedTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="Speed"
+                    android:textColor="#C7B1B1"
+                    android:textSize="26sp"
+                    android:textStyle="bold" />
+
+                <soup.neumorphism.NeumorphTextView
+                    android:id="@+id/speed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/speedTxt"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:text=" "
+                    android:textColor="#51B5D9"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:neumorph_shapeType="pressed" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/layout2"
+                android:layout_width="158dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                >
+
+                <soup.neumorphism.NeumorphTextView
+                    android:id="@+id/server_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="Serve"
+                    android:textColor="#C7B1B1"
+                    android:textSize="26sp"
+                    android:textStyle="bold" />
+
+                <soup.neumorphism.NeumorphTextView
+                    android:id="@+id/tv_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="US"
+                    android:layout_below="@+id/server_text"
+                    android:textColor="#51B5D9"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_centerHorizontal="true"
+                    app:neumorph_shapeType="pressed" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+    </soup.neumorphism.NeumorphCardView>
+    <FrameLayout
+        android:id="@+id/ads_connection_result_container_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="100dp"/>
+
+</LinearLayout>

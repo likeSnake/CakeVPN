@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F3F3"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:context=".activity.MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            >
+            <soup.neumorphism.NeumorphTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/app_name"
+                android:textColor="#D4BF53"
+                android:textSize="26sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:text="The connection was successful"/>
+        </LinearLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/ads_main_native_top"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_gravity="center"
+        android:gravity="bottom"/>
+
+    <soup.neumorphism.NeumorphCardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+
+            android:layout_width="316dp"
+            android:layout_height="200dp">
+            <soup.neumorphism.NeumorphTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="country"
+                android:textColor="#D3A1A8"
+                android:textSize="26sp"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold"/>
+            <ImageView
+                android:id="@+id/Top_flag"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/china"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                tools:ignore="DuplicateIds" />
+
+            <soup.neumorphism.NeumorphTextView
+                android:id="@+id/tv_vpn_connect_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Click 'Connect' to connect"
+                android:textColor="#BFD1B9"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                tools:ignore="MissingClass" />
+        </RelativeLayout>
+
+    </soup.neumorphism.NeumorphCardView>
+
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/iv_vpn_connection"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:text="Connect"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        app:neumorph_shapeType="flat"
+        android:textColor="#999999"
+        tools:ignore="MissingClass" />
+    <FrameLayout
+        android:id="@+id/flt_select_server"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp">
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/tv_server_desc"
+        android:layout_width="250dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="choose"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="#999999"
+        tools:ignore="MissingClass" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="right|center_vertical"
+            android:scaleType="centerInside"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/ic_arrow_right"/>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <FrameLayout
+            android:id="@+id/ads_main_native_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_gravity="bottom"
+            android:gravity="bottom"/>
+
+
+    </FrameLayout>
+
+</LinearLayout>
